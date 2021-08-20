@@ -75,13 +75,13 @@ ydl_opts = {
 }
 ydl = YoutubeDL(ydl_opts)
 
-RADIO_TITLE=os.environ.get("RADIO_TITLE", "AUDIO STREAMING NOW")
+RADIO_TITLE=os.environ.get("RADIO_TITLE", " 🎸 Music 24/7 | Radio Mode")
 if RADIO_TITLE=="NO":
     RADIO_TITLE = None
 
 
 
-class Audiomusicstreaming(object):
+class MusicPlayer(object):
     def __init__(self):
         self.group_call = GroupCallFactory(USER, GroupCallFactory.MTPROTO_CLIENT_TYPE.PYROGRAM).get_file_group_call()
 
@@ -395,7 +395,7 @@ class Audiomusicstreaming(object):
             print("Errorrs Occured\n Starting Red FM", e)
 
 
-mp = Audiomusicstreaming()
+mp = MusicPlayer()
 
 # pytgcalls handlers
 @mp.group_call.on_network_status_changed
