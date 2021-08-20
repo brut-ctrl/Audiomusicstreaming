@@ -41,7 +41,7 @@ from pyrogram.raw.functions.phone import EditGroupCallTitle, CreateGroupCall
 from random import randint
 
 bot = Client(
-    "Musicplayervc",
+    "Audiomusicstreamingvc",
     Config.API_ID,
     Config.API_HASH,
     bot_token=Config.BOT_TOKEN
@@ -75,13 +75,13 @@ ydl_opts = {
 }
 ydl = YoutubeDL(ydl_opts)
 
-RADIO_TITLE=os.environ.get("RADIO_TITLE", " 🎸 Music 24/7 | Radio Mode")
+RADIO_TITLE=os.environ.get("RADIO_TITLE", "AUDIO STREAMING NOW")
 if RADIO_TITLE=="NO":
     RADIO_TITLE = None
 
 
 
-class MusicPlayer(object):
+class Audiomusicstreaming(object):
     def __init__(self):
         self.group_call = GroupCallFactory(USER, GroupCallFactory.MTPROTO_CLIENT_TYPE.PYROGRAM).get_file_group_call()
 
@@ -395,7 +395,7 @@ class MusicPlayer(object):
             print("Errorrs Occured\n Starting Red FM", e)
 
 
-mp = MusicPlayer()
+mp = Audiomusicstreaming()
 
 # pytgcalls handlers
 @mp.group_call.on_network_status_changed

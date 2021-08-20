@@ -2,6 +2,7 @@ Pyrogram
 TgCrypto
 ffmpeg-python
 psutil
+pyrogram
 pytgcalls[pyrogram]
 wheel
 youtube_dl
@@ -9,3 +10,7 @@ youtube_search_python
 youtube_search
 wget
 requests
+python-arq
+python-dotenv
+gitpython
+asyncio
