@@ -66,6 +66,7 @@ You can also use /splay <song name> to play a song from JioSaavn or /cplay <chan
 """
 
 
+
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
     admins = await mp.get_admins(Config.CHAT)
@@ -211,8 +212,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data=="help":
         buttons = [
             [
-                InlineKeyboardButton('🔥 Support Group', url='https://t.me/fantaestheticgang'),
-                InlineKeyboardButton('🤖 Other Bots', url='https://github.com/brut69'),
+                InlineKeyboardButton('🔥 Update Channel', url='https://t.me/queengemoy_project'),
+                InlineKeyboardButton('🤖 Suber Bots', url='https://t.me/subin_works'),
             ],
             [
                 InlineKeyboardButton('👨🏼‍💻 Developer', url='https://t.me/brut69'),

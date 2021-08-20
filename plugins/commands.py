@@ -68,12 +68,13 @@ You can also use /splay <song name> to play a song from Jio Saavn or /cplay <cha
 
 
 
+
 @Client.on_message(filters.command(['start', f'start@{U}']))
 async def start(client, message):
     buttons = [
         [
-        InlineKeyboardButton('🔥 Support Group', url='https://t.me/fantaestheticgang'),
-        InlineKeyboardButton('🤖 Other Bots', url='https://github/brut69'),
+        InlineKeyboardButton('🔥 Update Channel', url='https://t.me/queengemoy_project'),
+        InlineKeyboardButton('🤖 Suber Bots', url='https://t.me/subin_works'),
     ],
     [
         InlineKeyboardButton('👨🏼‍💻 Developer', url='https://t.me/brut69'),
@@ -95,8 +96,8 @@ async def start(client, message):
 async def show_help(client, message):
     buttons = [
         [
-            InlineKeyboardButton('🔥 Support Group', url='https://t.me/fantaestheticgang'),
-            InlineKeyboardButton('🤖 Other Bots', url='https://github/brut69'),
+            InlineKeyboardButton('🔥 Update Channel', url='https://t.me/queengemoy_project'),
+            InlineKeyboardButton('🤖 Suber Bots', url='https://t.me/subin_works'),
         ],
         [
             InlineKeyboardButton('👨🏼‍💻 Developer', url='https://t.me/brut69'),
