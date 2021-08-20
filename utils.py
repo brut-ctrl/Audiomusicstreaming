@@ -81,7 +81,7 @@ if RADIO_TITLE=="NO":
 
 
 
-class MusicPlayer(object):
+class Audiomusicstreaming(object):
     def __init__(self):
         self.group_call = GroupCallFactory(USER, GroupCallFactory.MTPROTO_CLIENT_TYPE.PYROGRAM).get_file_group_call()
 
@@ -395,7 +395,7 @@ class MusicPlayer(object):
             print("Errorrs Occured\n Starting Red FM", e)
 
 
-mp = MusicPlayer()
+mp = Audiomusicstreaming()
 
 # pytgcalls handlers
 @mp.group_call.on_network_status_changed
