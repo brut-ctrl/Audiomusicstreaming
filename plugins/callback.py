@@ -39,6 +39,7 @@ You can also use /splay <song name> to play a song from JioSaavn or /cplay <chan
 **Common Commands**:
 
 **/play**  Reply to an audio file or YouTube link to play it or use /play <song name>.
+**/cplay** Play music from Channel.
 **/splay** Play music from Jio Saavn, Use /splay <song name>
 **/player**  Show current playing song.
 **/help** Show help for commands
