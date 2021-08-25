@@ -1,6 +1,6 @@
 {
   "name": "Telegram Voice Chat Music Player Bot ",
-  "description": "Telegram Bot to Play Audio and Stream in Telegram Voice Chats",
+  "description": "Telegram Bot to Play Audio in Telegram Voice Chats",
   "repository": "https://github.com/brut69/Audiomusicstreaming",
   "stack": "container",
   "keywords": [
@@ -27,10 +27,6 @@
       "description": "Bot token of Bot, get from @Botfather",
       "required": true
     },
-    "ARQ_API": {
-      "description": "get it for free from @ARQRobot",
-      "required": false
-    },
     "SESSION_STRING": {
       "description": "Session string, read the README to learn how to export it with Pyrogram",
       "required": true
@@ -54,7 +50,7 @@
     },
     "MAXIMUM_DURATION": {
       "description": "Maximum duration of song to be played using /play or /dplay",
-      "value": "7",
+      "value": "15",
       "required": false
     },
     "STREAM_URL": {
@@ -64,7 +60,7 @@
     },
     "REPLY_MESSAGE": {
       "description": "A reply message to those who message the USER account in PM. Make it blank if you do not need this feature.",
-      "value": "Helo Sar, I'm a bot to play music, not habing time to respons ur PM.",
+      "value": "Helo Ser, Iam a bot to play music, not havimg time to chat with you.",
       "required": false
     }
   },
