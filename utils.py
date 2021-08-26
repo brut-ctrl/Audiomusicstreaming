@@ -54,7 +54,7 @@ except ModuleNotFoundError:
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 bot = Client(
-    "Audiomusicstreamingvc",
+    "Musicplayervc",
     Config.API_ID,
     Config.API_HASH,
     bot_token=Config.BOT_TOKEN
@@ -90,13 +90,13 @@ ydl_opts = {
 }
 ydl = YoutubeDL(ydl_opts)
 
-RADIO_TITLE=os.environ.get("RADIO_TITLE", " 🎸 Music 24/7 | Radio Mode")
+RADIO_TITLE=os.environ.get("RADIO_TITLE", " 🎸 Radio Stream Mode")
 if RADIO_TITLE=="NO":
     RADIO_TITLE = None
 
 
 
-class Audiomusicstreaming(object):
+class MusicPlayer(object):
     def __init__(self):
         self.group_call = GroupCallFactory(USER, GroupCallFactory.MTPROTO_CLIENT_TYPE.PYROGRAM).get_file_group_call()
 
@@ -403,7 +403,7 @@ class Audiomusicstreaming(object):
                     for track in playlist[:2]:
                         await self.download_audio(track)
             if not playlist:
-                print("No songs Found From Channel, Starting FM")
+                print("No songs Found From Channel, Starting Club FM")
                 Config.CPLAY=False
                 Config.STREAM_URL="https://eu10.fastcast4u.com/clubfmuae"
                 await self.start_radio()
@@ -470,7 +470,7 @@ class Audiomusicstreaming(object):
             except:
                 pass
         except Exception as e:
-            print("Invalid Playlist File, Starting FM")
+            print("Invalid Playlist File, Starting ClubFM")
             Config.YPLAY=False
             Config.STREAM_URL="https://eu10.fastcast4u.com/clubfmuae"
             await self.start_radio()
@@ -512,7 +512,7 @@ class Audiomusicstreaming(object):
         return PROGRESS.get(int(user))
                 
 
-mp = Audiomusicstreaming()
+mp = MusicPlayer()
 
 # pytgcalls handlers
 @mp.group_call.on_network_status_changed
@@ -528,4 +528,3 @@ async def playout_ended_handler(_, __):
         await mp.start_radio()
     else:
         await mp.skip_current_playing()
-        
