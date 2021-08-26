@@ -30,18 +30,16 @@ HELP = """
 
 <b>
 Use /play <song name> or use /play as a reply to an audio file or youtube link.
-
 Use /yplay to play all the songs of a youtube playlist.
 
-You can also use <code>/splay song name</code> to play a song from Jio Saavn or <code>/splay -a album name</code> to play all the songs from a jiosaavn album or /cplay <channel username or channel id> to play music from a telegram channel.</b>
+You can also use <code>/splay song name</code> to play a song from Jio Saavn or <code>/splay -a album name</code> to play all the songs from a jiosaavn album or /cplay <channel username or channel id> to play music from a Telegram Channel.</b>
 
 **Common Commands**:
-
 **/play**  Reply to an audio file or YouTube link to play it or use /play <song name>.
 **/splay** Play music from Jio Saavn, Use /splay <song name> or <code>/splay -a album name</code> to play all the songs from that album.
 **/player**  Show current playing song.
 **/upload** Uploads current playing song as audio file.
-**/help** Show help for commands
+**/help** Show help for commands.
 **/playlist** Shows the playlist.
 
 **Admin Commands**:
@@ -49,7 +47,7 @@ You can also use <code>/splay song name</code> to play a song from Jio Saavn or 
 **/cplay** Play music from a channel's music files.
 **/yplay** Play music from a youtube playlist.
 **/join**  Join voice chat.
-**/leave**  Leave current voice chat
+**/leave**  Leave current voice chat.
 **/shuffle** Shuffle Playlist.
 **/vc**  Check which VC is joined.
 **/stop**  Stop playing.
