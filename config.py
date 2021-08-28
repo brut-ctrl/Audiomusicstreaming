@@ -30,7 +30,7 @@ ydl = YoutubeDL(ydl_opts)
 links=[]
 finalurl=""
 C_PLAY=False
-STREAM=os.environ.get("STREAM_URL", "http://stream.denger.in:8888/dmi")
+STREAM=os.environ.get("STREAM_URL", "https://bcovlive-a.akamaihd.net/19b535b7499a4719a5c19e043063f5d9/ap-southeast-1/6034685947001/playlist.m3u8?nocache=825347")
 regex = r"^(https?\:\/\/)?(www\.youtube\.com|youtu\.?be)\/.+"
 match = re.match(regex,STREAM)
 regex_ = r"http.*"
@@ -50,7 +50,7 @@ else:
 class Config:
     ADMIN = os.environ.get("ADMINS", '')
     ADMINS = [int(admin) if re.search('^\d+$', admin) else admin for admin in (ADMIN).split()]
-    API_ID = int(os.environ.get("API_ID", ''7341107"))
+    API_ID = int(os.environ.get("API_ID", "7363937''))
     CHAT = int(os.environ.get("CHAT", "-1001356822547"))
     LOG_GROUP=os.environ.get("LOG_GROUP", "-1001356822547")
     if LOG_GROUP:
@@ -61,7 +61,7 @@ class Config:
     CPLAY=C_PLAY
     SHUFFLE=bool(os.environ.get("SHUFFLE", True))
     LIMIT=int(os.environ.get("LIMIT", 350))
-    ADMIN_ONLY=os.environ.get("ADMIN_ONLY", "Y")
+    ADMIN_ONLY=os.environ.get("ADMIN_ONLY", "N")
     REPLY_MESSAGE=os.environ.get("REPLY_MESSAGE", None)
     if REPLY_MESSAGE:
         REPLY_MESSAGE=REPLY_MESSAGE
