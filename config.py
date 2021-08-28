@@ -49,7 +49,7 @@ elif STREAM.startswith("https://t.me/punyamipan"):
         Y_PLAY=True
     except:
         finalurl="http://stream.denger.in:8888/dmi"
-        print("Unable to fetch youtube playlist, starting STREAM RADIO FM")
+        print("Unable to fetch youtube playlist, starting Denger.in FM")
         pass
 elif match_:
     finalurl=STREAM 

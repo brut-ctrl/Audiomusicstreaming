@@ -90,7 +90,7 @@ ydl_opts = {
 }
 ydl = YoutubeDL(ydl_opts)
 
-RADIO_TITLE=os.environ.get("RADIO_TITLE", " 🎸 Music 24/7 | Radio Mode")
+RADIO_TITLE=os.environ.get("RADIO_TITLE", " Denger.in FM STREAM")
 if RADIO_TITLE=="NO":
     RADIO_TITLE = None
 
@@ -406,9 +406,9 @@ class Audiomusicstreaming(object):
                     for track in playlist[:2]:
                         await self.download_audio(track)
             if not playlist:
-                print("No songs Found From Channel, Starting Club FM")
+                print("No songs Found From Channel, Starting Denger.in FM")
                 Config.CPLAY=False
-                Config.STREAM_URL="https://eu10.fastcast4u.com/clubfmuae"
+                Config.STREAM_URL="http://stream.denger.in:8888/dmi"
                 await self.start_radio()
                 return
             else:
@@ -419,9 +419,9 @@ class Audiomusicstreaming(object):
                     await self.send_playlist()          
         except Exception as e:
             Config.CPLAY=False
-            Config.STREAM_URL="https://eu10.fastcast4u.com/clubfmuae"
+            Config.STREAM_URL="http://stream.denger.in:8888/dmi"
             await self.start_radio()
-            print("Errorrs Occured\n Starting CluB FM", e)
+            print("Errorrs Occured\n Starting Denger.in FM", e)
 
     async def y_play(self, msg_id):
         if 1 in RADIO:
@@ -449,9 +449,9 @@ class Audiomusicstreaming(object):
                     if EDIT_TITLE:
                         await self.edit_title()
                 if not playlist:
-                    print("Invalid Playlist File, Starting ClubFM")
+                    print("Invalid Playlist File, Starting Denger.in FM")
                     Config.YPLAY=False
-                    Config.STREAM_URL="https://eu10.fastcast4u.com/clubfmuae"
+                    Config.STREAM_URL="http://stream.denger.in:8888/dmi"
                     await self.start_radio()
                     file.close()
                     try:
@@ -473,9 +473,9 @@ class Audiomusicstreaming(object):
             except:
                 pass
         except Exception as e:
-            print("Invalid Playlist File, Starting ClubFM")
+            print("Invalid Playlist File, Starting Denger.in FM")
             Config.YPLAY=False
-            Config.STREAM_URL="https://eu10.fastcast4u.com/clubfmuae"
+            Config.STREAM_URL="http://stream.denger.in:8888/dmi"
             await self.start_radio()
             return
 
