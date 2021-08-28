@@ -54,7 +54,7 @@ except ModuleNotFoundError:
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 bot = Client(
-    "Audiomusocstreamingvc",
+    "Audiomusicstreamingvc",
     Config.API_ID,
     Config.API_HASH,
     bot_token=Config.BOT_TOKEN
@@ -96,7 +96,7 @@ if RADIO_TITLE=="NO":
 
 
 
-class Audiomusocstreaming(object):
+class Audiomusicstreaming(object):
     def __init__(self):
         self.group_call = GroupCallFactory(USER, GroupCallFactory.MTPROTO_CLIENT_TYPE.PYROGRAM).get_file_group_call()
 
@@ -515,7 +515,7 @@ class Audiomusocstreaming(object):
         return PROGRESS.get(int(user))
                 
 
-mp = Audiomusocstreaming()
+mp = Audiomusicstreaming()
 
 # pytgcalls handlers
 @mp.group_call.on_network_status_changed
