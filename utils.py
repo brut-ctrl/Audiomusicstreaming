@@ -54,7 +54,7 @@ except ModuleNotFoundError:
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 bot = Client(
-    "Musicplayervc",
+    "Audiomusocstreamingvc",
     Config.API_ID,
     Config.API_HASH,
     bot_token=Config.BOT_TOKEN
@@ -90,13 +90,13 @@ ydl_opts = {
 }
 ydl = YoutubeDL(ydl_opts)
 
-RADIO_TITLE=os.environ.get("RADIO_TITLE", " 🎸 Radio Stream Mode")
+RADIO_TITLE=os.environ.get("RADIO_TITLE", " 🎸 Music 24/7 | Radio Mode")
 if RADIO_TITLE=="NO":
     RADIO_TITLE = None
 
 
 
-class MusicPlayer(object):
+class Audiomusocstreaming(object):
     def __init__(self):
         self.group_call = GroupCallFactory(USER, GroupCallFactory.MTPROTO_CLIENT_TYPE.PYROGRAM).get_file_group_call()
 
@@ -140,10 +140,13 @@ class MusicPlayer(object):
             await self.edit_title()
         if LOG_GROUP:
             await self.send_playlist()
-        os.remove(os.path.join(
-            download_dir,
-            f"{old_track[5]}.raw")
-        )
+        try:
+            os.remove(os.path.join(
+                download_dir,
+                f"{old_track[5]}.raw")
+                )
+        except:
+            pass
         oldfile=GET_FILE.get(old_track[2])
         try:
             os.remove(oldfile)
@@ -512,7 +515,7 @@ class MusicPlayer(object):
         return PROGRESS.get(int(user))
                 
 
-mp = MusicPlayer()
+mp = Audiomusocstreaming()
 
 # pytgcalls handlers
 @mp.group_call.on_network_status_changed
