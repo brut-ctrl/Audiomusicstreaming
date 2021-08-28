@@ -48,7 +48,7 @@ else:
     finalurl=STREAM
 
 class Config:
-    ADMIN = os.environ.get("ADMINS", ''1408440765")
+    ADMIN = os.environ.get("ADMINS", '')
     ADMINS = [int(admin) if re.search('^\d+$', admin) else admin for admin in (ADMIN).split()]
     API_ID = int(os.environ.get("API_ID", "7363937''))
     CHAT = int(os.environ.get("CHAT", "-1001356822547"))
