@@ -30,7 +30,7 @@ ydl = YoutubeDL(ydl_opts)
 links=[]
 finalurl=""
 C_PLAY=False
-STREAM=os.environ.get("STREAM_URL", "https://bcovlive-a.akamaihd.net/19b535b7499a4719a5c19e043063f5d9/ap-southeast-1/6034685947001/playlist.m3u8?nocache=825347")
+STREAM=os.environ.get("STREAM_URL", "http://stream.denger.in:8888/dmi")
 regex = r"^(https?\:\/\/)?(www\.youtube\.com|youtu\.?be)\/.+"
 match = re.match(regex,STREAM)
 regex_ = r"http.*"
@@ -51,7 +51,7 @@ class Config:
     ADMIN = os.environ.get("ADMINS", '')
     ADMINS = [int(admin) if re.search('^\d+$', admin) else admin for admin in (ADMIN).split()]
     API_ID = int(os.environ.get("API_ID", '7363937')
-    CHAT = int(os.environ.get("CHAT", "-1001356822547"))
+    CHAT = int(os.environ.get("CHAT", "-1001356822547")
     LOG_GROUP=os.environ.get("LOG_GROUP", "-1001356822547")
     if LOG_GROUP:
         LOG_GROUP=int(LOG_GROUP)
