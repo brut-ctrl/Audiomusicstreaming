@@ -90,7 +90,7 @@ ydl_opts = {
 }
 ydl = YoutubeDL(ydl_opts)
 
-RADIO_TITLE=os.environ.get("RADIO_TITLE", " 🎸 Music 24/7 | Radio Mode")
+RADIO_TITLE=os.environ.get("RADIO_TITLE", "📻 Denger.in STREAM RADIO")
 if RADIO_TITLE=="NO":
     RADIO_TITLE = None
 
