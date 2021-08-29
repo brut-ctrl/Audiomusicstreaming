@@ -7,7 +7,7 @@ Supports Live streaming from youtube.
 
 ## Deploy to Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/brut69/Audiomusicstreaming)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/brut-ctrl/Audiomusicstreaming)
 
 NOTE: Make sure you have started a VoiceChat in your Group before deploying.
 

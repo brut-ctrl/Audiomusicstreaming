@@ -1,7 +1,8 @@
 {
   "name": "Telegram Voice Chat Music Player Bot ",
   "description": "Telegram Bot to Play Audio in Telegram Voice Chats",
-  "repository": "https://github.com/brut69/Audiomusicstreaming",
+  "logo": "https://telegra.ph/file/897d38266a74fed3bc2c2.png",
+  "repository": "https://github.com/brut-ctrl/Audiomusicstreaming",
   "stack": "container",
   "keywords": [
     "telegram",
@@ -55,12 +56,12 @@
     },
     "STREAM_URL": {
       "description": "URL of Radio station or Youtube live video url to stream with /radio command",
-      "value": "https://youtu.be/36YnV9STBqc",
+      "value": "http://stream.denger.in:8888/dmi",
       "required": false
     },
     "REPLY_MESSAGE": {
       "description": "A reply message to those who message the USER account in PM. Make it blank if you do not need this feature.",
-      "value": "Helo Ser, Iam a bot to play music, not havimg time to chat with you.",
+      "value": "Hello Sar, Im a bot to play music in your Private Group, not habing time respon with your PM.",
       "required": false
     }
   },

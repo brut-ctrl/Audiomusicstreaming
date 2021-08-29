@@ -140,10 +140,13 @@ class Audiomusicstreaming(object):
             await self.edit_title()
         if LOG_GROUP:
             await self.send_playlist()
-        os.remove(os.path.join(
-            download_dir,
-            f"{old_track[5]}.raw")
-        )
+        try:
+            os.remove(os.path.join(
+                download_dir,
+                f"{old_track[5]}.raw")
+                )
+        except:
+            pass
         oldfile=GET_FILE.get(old_track[2])
         try:
             os.remove(oldfile)
@@ -403,9 +406,9 @@ class Audiomusicstreaming(object):
                     for track in playlist[:2]:
                         await self.download_audio(track)
             if not playlist:
-                print("No songs Found From Channel, Starting FM")
+                print("No songs Found From Channel, Starting Denger.in FM")
                 Config.CPLAY=False
-                Config.STREAM_URL="https://eu10.fastcast4u.com/clubfmuae"
+                Config.STREAM_URL="http://stream.denger.in:8888/dmi"
                 await self.start_radio()
                 return
             else:
@@ -416,9 +419,9 @@ class Audiomusicstreaming(object):
                     await self.send_playlist()          
         except Exception as e:
             Config.CPLAY=False
-            Config.STREAM_URL="https://eu10.fastcast4u.com/clubfmuae"
+            Config.STREAM_URL="http://stream.denger.in:8888/dmi"
             await self.start_radio()
-            print("Errorrs Occured\n Starting CluB FM", e)
+            print("Errorrs Occured\n Starting Denger.in FM", e)
 
     async def y_play(self, msg_id):
         if 1 in RADIO:
@@ -446,9 +449,9 @@ class Audiomusicstreaming(object):
                     if EDIT_TITLE:
                         await self.edit_title()
                 if not playlist:
-                    print("Invalid Playlist File, Starting ClubFM")
+                    print("Invalid Playlist File, Starting Denger.in FM")
                     Config.YPLAY=False
-                    Config.STREAM_URL="https://eu10.fastcast4u.com/clubfmuae"
+                    Config.STREAM_URL="http://stream.denger.in:8888/dmi"
                     await self.start_radio()
                     file.close()
                     try:
@@ -470,9 +473,9 @@ class Audiomusicstreaming(object):
             except:
                 pass
         except Exception as e:
-            print("Invalid Playlist File, Starting FM")
+            print("Invalid Playlist File, Starting Denger.in FM")
             Config.YPLAY=False
-            Config.STREAM_URL="https://eu10.fastcast4u.com/clubfmuae"
+            Config.STREAM_URL="http://stream.denger.in:8888/dmi"
             await self.start_radio()
             return
 
@@ -528,4 +531,3 @@ async def playout_ended_handler(_, __):
         await mp.start_radio()
     else:
         await mp.skip_current_playing()
-        
