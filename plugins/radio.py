@@ -77,7 +77,7 @@ async def stop(_, message: Message):
             await mp.delete(message)
             return 
     if 0 in RADIO:
-        k=await message.reply_text("Kindly start Radio First /restart")
+        k=await message.reply_text("Kindly start Radio First /radio")
         await mp.delete(k)
         await mp.delete(message)
         return
