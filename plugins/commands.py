@@ -26,7 +26,7 @@ from config import Config
 U=USERNAME
 CHAT=Config.CHAT
 msg=Config.msg
-HOME_TEXT = "<b>Helo, [{}](tg://user?id={})\n\nIam MusicPlayer 2.0 which plays music in Channels and Groups 24*7.\n\nI can even Stream Youtube Live in Your Voicechat.\n\nDeploy Your Own bot from source code below.\n\nHit /help to know about available commands.</b>"
+HOME_TEXT = "<b>Helo, [{}](tg://user?id={})\n\nIam Audiomusicstreaming 2.0 which plays music in Channels and Groups.\n\nI can even Stream Youtube Live or Radio in Your Voicechat.\n\nDeploy Your Own bot from source code below.\n\nHit /help to know about available commands.</b>"
 HELP = """
 
 <b>
@@ -63,7 +63,7 @@ You can also use <code>/splay song name</code> to play a song from Jio Saavn or 
 **/clean** Remove unused RAW PCM files.
 **/pause** Pause playing.
 **/resume** Resume playing.
-**/volume** Change volume(0-200).
+**/volume** Change volume (0-200).
 **/mute**  Mute in VC.
 **/unmute**  Unmute in VC.
 **/restart**  Update and restarts the Bot.
@@ -76,8 +76,8 @@ You can also use <code>/splay song name</code> to play a song from Jio Saavn or 
 async def start(client, message):
     buttons = [
         [
-        InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/subin_works'),
-        InlineKeyboardButton('🧩 Source', url='https://github.com/subinps/MusicPlayer'),
+        InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/queengemoy_project'),
+        InlineKeyboardButton('🧩 Source', url='https://github.com/brut-ctrl/Audiomusicstreaming'),
     ],
     [
         InlineKeyboardButton('👨🏼‍🦯 Help', callback_data='help'),
@@ -95,8 +95,8 @@ async def start(client, message):
 async def show_help(client, message):
     buttons = [
         [
-        InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/subin_works'),
-        InlineKeyboardButton('🧩 Source', url='https://github.com/subinps/MusicPlayer'),
+        InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/queengemoy_project'),
+        InlineKeyboardButton('🧩 Source', url='https://github.com/brut-ctrl/Audiomusicstreaming'),
     ]
     ]
     reply_markup = InlineKeyboardMarkup(buttons)

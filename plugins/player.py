@@ -1027,7 +1027,7 @@ async def yt_play_list(client, m: Message):
                             InlineKeyboardButton("📢 Join My Update Channel", url='https://t.me/queengemoy_project')
                         ],
                         [
-                            InlineKeyboardButton("🔄 Try Again", url=f"https://telegram.me/GetPlaylistBot?start=queengemoy_{m.from_user.id}")
+                            InlineKeyboardButton("🔁 Try Again", url=f"https://telegram.me/GetPlaylistBot?start=queengemoy_{m.from_user.id}")
 
                         ]
                     ]
