@@ -82,7 +82,7 @@ class Config:
     EDIT_TITLE = os.environ.get("EDIT_TITLE", True)
     if EDIT_TITLE == "NO":
         EDIT_TITLE=None
-    DURATION_LIMIT=int(os.environ.get("MAXIMUM_DURATION", 90))
+    DURATION_LIMIT=int(os.environ.get("MAXIMUM_DURATION", 60))
     DELAY = int(os.environ.get("DELAY", 10))
     API_HASH = os.environ.get("API_HASH", "eb4072cd0e4a2bb3ca7044a2e7218582")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "1934836631:AAH-Tx_V9assxs-7r4FGs_Dq-vGKSdFTd0Y")     
