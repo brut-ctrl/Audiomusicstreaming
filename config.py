@@ -86,7 +86,7 @@ class Config:
     DELAY = int(os.environ.get("DELAY", 10))
     API_HASH = os.environ.get("API_HASH", "eb4072cd0e4a2bb3ca7044a2e7218582")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "1934836631:AAH-Tx_V9assxs-7r4FGs_Dq-vGKSdFTd0Y")     
-    SESSION = os.environ.get("SESSION_STRING", "BQB1-sp9MwT5suciMIFVzb3ykIEmbzZbdDuA26DZpxbPIDQD2sRq6VLryby0K8F9bIGLO8TdHuyq49vvoIpHg6B4WAc1ZnZxeLVB67gZYLNpkebtLVs5nUVtQOYAA4gjyVz40Iksv2xMvKM7mNb-mUpabIv2PU_8PK8MFXhFt5PWV4ebrOcnKpR8AQmi-e4dMqMK0U99yBJ7naiShcbhjrbsKvvURRdFl09nYNui_7J5pHWKzwbMKvsu6x2vUqRYu-opkRDPZcVRbA-hbe51m4KILvZDlPbShbahNGct_9hPzIFzc_6G4JlX_jHwOOW7YuxfKADwV4FLm_IT9tjjm5imc-sZ3QA")
+    SESSION = os.environ.get("SESSION_STRING", "BQBA_bxZOQoc1RpG-dInosT9amgYTm_V8BPQXLCySbqkfNc4VEfsXZ86xIdIWrlMMldlMcH6zXNHyq1vugbE3IBZjA5kVkIz4XD003mAwljIbVd0I8dvKwJsn-6xcO7YEeeLEvEfgxEqxFGMWTrdjK1DbF-5X85Dc5xjdxXwr1X_OvQWBY2kGQM5M5Y9gOIVma9xvQ_r4NMlp9J_xg6xQMgMsTmGqz-iGLvLc-eBARXKPp9Z4-sPxkUAsjcSB8u0Aoc3cEtePA-7TDHqEkjJtN3ug4nL3utnlwILon4M5HrqgOT7DFJ7MTYbEv24nt6YSJCAv4btuHHya2DxvOvx_9Gdc-sZ3QA")
     playlist=[]
     msg = {}
     CONV = {}
