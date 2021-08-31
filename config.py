@@ -62,7 +62,7 @@ class Config:
     ADMINS = [int(admin) if re.search('^\d+$', admin) else admin for admin in (ADMIN).split()]
     API_ID = int(os.environ.get("API_ID", '7363937'))
     CHAT = int(os.environ.get("CHAT", "-1001367572547"))
-    LOG_GROUP=os.environ.get("LOG_GROUP", "-1001356822547")
+    LOG_GROUP=os.environ.get("LOG_GROUP", "-1001325382108")
     if LOG_GROUP:
         LOG_GROUP=int(LOG_GROUP)
     else:
@@ -86,7 +86,7 @@ class Config:
     DELAY = int(os.environ.get("DELAY", 10))
     API_HASH = os.environ.get("API_HASH", "eb4072cd0e4a2bb3ca7044a2e7218582")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "1934836631:AAH-Tx_V9assxs-7r4FGs_Dq-vGKSdFTd0Y")     
-    SESSION = os.environ.get("SESSION_STRING", "BQCabVugCIliZNhDc2N7VEqnp8hqUyhW3ccImwIxdAoFdiX2GTukRn4OJkcPPCtN7iXwsQI463C-ycQ-6YiF846hwE7smhqf_5JhuPoAwJ8lWPcjyWZ4qATLgsQKrY0XCK_eYvD4fm-VYZnU_AlI9BaQqCKvWqOkrvAv0hoyAatVNwdd-3CTprTrc11RTzBQZKvsjYJjCysH0yu3nHY75tiunO2jAQZvtKNkxOJaTQsVyqevY1JfYUoCTzidLpi5bGd25A6n0Pv2h_35JueskHiKnZLXicSKTfMJTJuX63y6k0Nb0r4Mi0tQ-gKfUVZZvzS9EA-xcpXymoi0ZNfl_6_Pc-sZ3QA")
+    SESSION = os.environ.get("SESSION_STRING", "BQCcYMV8PUNNKt3C-yZqUazB3KBcKzYa9h5WbivUkwiRCfiO4u9pViVrbNBXj4J4vtKrNN6q-HlwryIpXuE011KUoGS2UEdJvS-3LfnJpqWfsxaziDKImYaCMEG7bZ2g4SjHr_-RjLjfxYrZr4tZST6rn99vBcExQzWV7Dz7RQY2flRHGxROtA94li1_T4DufW1TNFgJSRbbXWnUWJ381bbfWSF_vt6fht8cxgc4J0wwYeSAEAqSTY5ZAztj3YbymSXcNj9fcI4KkKRxfHwUYQtwPNGLHEZFlgM7vGDm-b8lmkk5f0pJ0eik0GcmQS0-fGtW6UTokGonLLkcoh0qStuzc-sZ3QA")
     playlist=[]
     msg = {}
     CONV = {}
