@@ -31,7 +31,7 @@ links=[]
 finalurl=""
 C_PLAY=False
 Y_PLAY=False
-STREAM=os.environ.get("STREAM_URL", "https://youtu.be/Y56n7K5I_Kw")
+STREAM=os.environ.get("STREAM_URL", "https://t.me/punyamipan/1073")
 regex = r"^(https?\:\/\/)?(www\.youtube\.com|youtu\.?be)\/.+"
 match = re.match(regex,STREAM)
 regex_ = r"http.*"
@@ -42,7 +42,7 @@ if match:
     for f in formats:
         links.append(f['url'])
     finalurl=links[-1]
-elif STREAM.startswith("https://youtu.be/Y56n7K5I_Kw"):
+elif STREAM.startswith("https://t.me/punyamipan/1073"):
     try:
         msg_id=STREAM.split("/", 4)[4]
         finalurl=int(msg_id)
