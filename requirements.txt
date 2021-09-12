@@ -3,6 +3,7 @@ TgCrypto
 ffmpeg-python
 psutil
 pytgcalls[pyrogram]
+pytgcalls==3.0.0.dev19
 wheel
 youtube_dl
 youtube_search_python
