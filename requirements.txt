@@ -2,11 +2,13 @@ Pyrogram
 TgCrypto
 ffmpeg-python
 psutil
-pytgcalls[pyrogram]
+py-tgcalls==0.8.1rc1
 wheel
+yt-dlp
 youtube_dl
 youtube_search_python
 youtube_search
 wget
+dnspython
+pytz
 requests
-
