@@ -1,8 +1,8 @@
-Pyrogram
+pyrogram
 TgCrypto
+pytgcalls
 ffmpeg-python
 psutil
-py-tgcalls==0.8.1rc1
 wheel
 yt-dlp
 youtube_dl
@@ -12,3 +12,4 @@ wget
 dnspython
 pytz
 requests
+gitpython
