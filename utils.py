@@ -330,7 +330,7 @@ class Audiomusicstreaming(object):
         else:       
             pl = playlist[0]
             title = pl[1]
-        call = InputGroupCall(id=self.group_call.group_call, access_hash=self.group_call.group_call.access_hash)
+        call = InputGroupCall(id=self.group_call.group_call, access_hash=self.group_call.group_call)
         edit = EditGroupCallTitle(call=call, title=title)
         try:
             await self.group_call.client.send(edit)
