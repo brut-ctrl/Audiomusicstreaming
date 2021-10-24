@@ -1,15 +1,12 @@
-pyrogram
+Pyrogram
 TgCrypto
-pytgcalls
 ffmpeg-python
 psutil
+pytgcalls[pyrogram]
 wheel
-yt-dlp
 youtube_dl
 youtube_search_python
 youtube_search
 wget
-dnspython
-pytz
 requests
 gitpython
