@@ -25,6 +25,7 @@ try:
     import os
     import subprocess
     import sys
+    from pytgcalls.exceptions import GroupCallNotFoundError
     from config import Config
     import ffmpeg
     from pyrogram import emoji
@@ -329,10 +330,7 @@ class Audiomusicstreaming(object):
         else:       
             pl = playlist[0]
             title = pl[1]
-        call = InputGroupCall(
-        id=self.group_call.group_call.id, 
-        access_hash=self.group_call.group_call.access_hash)
-        
+        call = InputGroupCall(id=self.group_call.group_call.id, access_hash=self.group_call.group_call.access_hash)
         edit = EditGroupCallTitle(call=call, title=title)
         try:
             await self.group_call.client.send(edit)
@@ -340,8 +338,7 @@ class Audiomusicstreaming(object):
             print("Errors Occured while editing title", e)
             pass
     
-    
-    
+
     async def delete(self, message):
         if message.chat.type == "supergroup":
             await sleep(DELAY)

@@ -1,17 +1,12 @@
-git+https://github.com/pyrogram/pyrogram@master
+Pyrogram
 TgCrypto
 ffmpeg-python
 psutil
 pytgcalls[pyrogram]
-py-tgcalls==0.8.1rc1
 wheel
 youtube_dl
-yt-dlp
 youtube_search_python
 youtube_search
 wget
 requests
-dnspython
-pytz
-python-dotenv
 
